@@ -1,0 +1,9 @@
+<h1>Members List</h1>
+
+<a href="/members/add/">Add Member</a>
+
+{% for member in members %}
+  <p>
+    {{ member.name }} - {{ member.email }}
+  </p>
+{% endfor %}

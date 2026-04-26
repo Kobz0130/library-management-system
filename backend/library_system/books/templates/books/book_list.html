@@ -1,0 +1,10 @@
+<h1>Books List</h1>
+
+<a href="/books/add/">Add Book</a>
+
+{% for book in books %}
+  <p>
+    {{ book.title }} - {{ book.author }}
+    (Available: {{ book.available }})
+  </p>
+{% endfor %}

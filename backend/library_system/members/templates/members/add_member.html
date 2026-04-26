@@ -1,0 +1,9 @@
+<h1>Add Member</h1>
+
+<form method="POST">
+  {% csrf_token %}
+  <input type="text" name="name" placeholder="Name">
+  <input type="email" name="email" placeholder="Email">
+  <input type="text" name="phone" placeholder="Phone">
+  <button type="submit">Save</button>
+</form>
